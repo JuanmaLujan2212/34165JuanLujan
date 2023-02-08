@@ -86,6 +86,7 @@ const carrito = [producto1, producto2, producto3, producto4, producto5];
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 
 
+
 ////Aqui es donde el codigo se torna repetitivo hasta la linea 140
 
 let botonQ = document.getElementById("btnQuitar1");
