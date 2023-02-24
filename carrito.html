@@ -13,7 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/Styles.css">
     <link rel="shortcut icon" type="image/jpeg" href="Assets/favicon.png">
-    <script type="text/javascript" src="js/script.js" defer></script>
+    <script type="text/javascript" src="js/stock.js" defer></script>
+    <script type="text/javascript" src="js/script2.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
           </div>
           <div class="login">
                <a href="carrito.html"><img src="Assets/Carrito.png"></a>
-               <a href="Pages/login.html"><img src="Assets/usuario.png"></a>           
+               <a href="login.html"><img src="Assets/usuario.png"></a>           
           </div>        
         </section> 
 
@@ -41,89 +42,19 @@
         </section>
      </header>
 
-     <section id="CarritoBody">
-        <section class="Productos">
+  
 
-            <div class="ImgProd">
-                <div id="Producto1" class="ProdCards">
-                     <img src="Assets/Calzado3.jfif">
-                     
-                     <div class="CantProd">
+     <section id="Carrito">
+      <div id="ContenedorCarrito">
 
-                        <button id="btnQuitar1">-</button>
 
-                        <p id= "DisplayCantidad1" ></p>
-
-                        <button id="btnAgregar1">+</button>
-
-                     </div>
-
-                </div>
-                <div id="Producto2" class="ProdCards">
-                    <img src="Assets/Pantalones13.jfif">
-                    <div class="CantProd">
-
-                        <button id="btnQuitar2">-</button>
-
-                        <p id= "DisplayCantidad2" ></p>
-
-                        <button id="btnAgregar2">+</button>
-                        
-                     </div>
-                </div>
-                <div id="Producto3" class="ProdCards">
-                    <img src="Assets/Camisetas3.jfif">
-                    <div class="CantProd">
-
-                        <button id="btnQuitar3">-</button>
-
-                        <p id= "DisplayCantidad3" ></p>
-
-                        <button id="btnAgregar3">+</button>
-                        
-                     </div>
-                </div>
-                <div id="Producto4" class="ProdCards">
-                    <img src="Assets/Pantalones15.jfif">
-                    <div class="CantProd">
-
-                        <button id="btnQuitar4">-</button>
-
-                        <p id= "DisplayCantidad4" ></p>
-
-                        <button id="btnAgregar4">+</button>
-                        
-                     </div>
-                </div>
-                <div id="Producto5" class="ProdCards">
-                    <img src="Assets/Campera4.jfif">
-                    <div class="CantProd">
-
-                        <button id="btnQuitar5">-</button>
-
-                        <p id= "DisplayCantidad5" ></p>
-
-                        <button id="btnAgregar5">+</button>
-                        
-                     </div>
-                </div>
-                <div>
-
-            </div>
-          
-         </section>
-
-         <div id="ResumenCompra">
-            <div id="ContainerCompra">
-                <h5>Resumen del pedido</h5>
-                <div id="MostrarProd">
-                </div>
-                <button id="btnFinalizar">FINALIZAR COMPRA</button>
-            </div>
-
-         </div>
-
+      </div>
+      <div id="ResumenCompra">
+      </div>
      </section>
+      
+     
+     <p id="PrecioTotal"> </p>
 
      <footer>
 

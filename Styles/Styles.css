@@ -41,51 +41,6 @@ header {
         header .navbar #lista1 li a:hover {
           background-color: whitesmoke; }
 
-
-.CantProd{
-  display: flex;
-  justify-content: space-around;
-}
-
-.CantProd p{
-  margin-top: 18px;
-}
-
-.CantProd button{
-  height: 40px;
-  width: 40px;
-  margin-top: 10px;
-}
-
-.ProdCards{
-  margin: auto;
-}
-
-#ResumenCompra{
-  width: 100%; 
-}
-
-#ContainerCompra{
-  margin: auto;
-  width: 300px;
-  
-}
-
-#ContainerCompra h5{
- text-align: center;
-  
-}
-
-#btnFinalizar{
-  background-color: #232f3e;
-  color: white;
-  border: none;
-  width: 300px;
-  height: 50px;
-  padding: 5px 62px;
-  border-radius: 5px;
-}
-
 .Productos h1 {
   font: normal 30px Arial;
   text-align: center;
@@ -258,3 +213,60 @@ footer {
     width: 500px;
     margin-top: 150px;
     border-radius: 2%; } }
+
+/* Css del curso de js */
+
+.producto {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnCardProd{
+  background-color: #232f3e;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#Carrito{
+  display: flex;
+  width: 1100px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+#ContenedorCarrito{
+ width: 800px;
+}
+
+#ResumenCompra{
+ width: 300px;
+ background-color: red;
+ margin-left: 70px;
+}
+
+.productoEnCarrito{
+  display: flex;
+}
+
+.productoEnCarrito img{
+  height: 150px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.InfoProdCart{
+  padding-left: 20px;
+}
+
+.ControlCantidad{
+  display: flex;
+}
+
+.CantProd{
+  display: flex;
+}
+
