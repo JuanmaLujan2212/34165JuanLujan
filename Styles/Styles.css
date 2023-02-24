@@ -1,3 +1,9 @@
+button{
+  border: none;
+  background: none;
+}
+
+
 header {
   padding-top: 15px;
   background-color: #131921; }
@@ -244,8 +250,7 @@ footer {
 
 #ResumenCompra{
  width: 300px;
- background-color: red;
- margin-left: 70px;
+ padding-left: 20px;
 }
 
 .productoEnCarrito{
@@ -262,11 +267,59 @@ footer {
   padding-left: 20px;
 }
 
+.InfoProdCart h2{
+  font-family: muli-bold,sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.InfoProdCart p{
+  margin-bottom: 7px;
+}
+
 .ControlCantidad{
   display: flex;
+  height: 20px;
 }
 
 .CantProd{
   display: flex;
 }
 
+.BtnEliminar{
+ padding: 0px;
+ height: 27px;
+}
+
+.BtnEliminar img{
+  height: 25px;
+  width: 25px;
+}
+
+.btnQty{
+ font-size: 16px;
+}
+
+#ResumenFinal h3{
+  text-align: left;
+  font-size: 20px;
+}
+
+#Subtotal{
+  display: flex;
+}
+
+#Subtotal h3{
+  font-size: 15px;
+}
+
+#btnFinalizar{
+  color: white;
+  font-size: 20px;
+  background-color: #232f3e;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+#Carrito{
+min-height: 500px;
+}
