@@ -9,46 +9,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-// fetch('/data.json')
-//    .then( (res) => res.json())
-//   .then( (data) => {
-//
-//        data.forEach((producto)=>{
-//            const div = document.createElement('div');
-//            div.classList.add('producto');
-//            div.innerHTML = `
-//            <img src= alt= "">
-//            <button id="agregar" class="btnCardProd">Agregar al carrito</button>
-//            `
-//        
-//            contenedorProductos.appendChild(div);
-//        
-//           const boton = document.getElementById(`agregar`)
-//        
-//            boton.addEventListener('click', () => {
-//                AgregarAlCarrito(producto.id)
-//            })
-//        
-//        })
-//    })
+fetch('/testCarrito/data.json')
+   .then( (res) => res.json())
+  .then( (data) => {
 
-stockProductos.forEach((producto)=>{
-        const div = document.createElement('div');
-        div.classList.add('producto');
-        div.innerHTML = `
-        <img src=${producto.img} alt= "">
-        <button id="agregar${producto.id}" class="btnCardProd">Agregar al carrito</button>
-         `
-            
-        contenedorProductos.appendChild(div);
-            
-        const boton = document.getElementById(`agregar${producto.id}`)
-           
-        boton.addEventListener('click', () => {
-            AgregarAlCarrito(producto.id)
-         })
-            
-    })
+       data.forEach((producto)=>{
+           const div = document.createElement('div');
+           div.classList.add('producto');
+           div.innerHTML = `
+           <img src= alt= "">
+           <button id="agregar" class="btnCardProd">Agregar al carrito</button>
+           `
+       
+           contenedorProductos.appendChild(div);
+       
+          const boton = document.getElementById(`agregar`)
+       
+           boton.addEventListener('click', () => {
+               AgregarAlCarrito(producto.id)
+           })
+       
+       })
+   })
+
+// stockProductos.forEach((producto)=>{
+//         const div = document.createElement('div');
+//        div.classList.add('producto');
+//        div.innerHTML = `
+//        <img src=${producto.img} alt= "">
+//        <button id="agregar${producto.id}" class="btnCardProd">Agregar al carrito</button>
+//         `
+//           
+//        contenedorProductos.appendChild(div);
+//            
+//        const boton = document.getElementById(`agregar${producto.id}`)
+//           
+//        boton.addEventListener('click', () => {
+//            AgregarAlCarrito(producto.id)
+//         })
+//            
+//    })
 
 
 
